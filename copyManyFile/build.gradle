@@ -1,0 +1,4 @@
+task copyReportsForArchiving(type: Copy) {
+    from "$buildDir/reports/my-report.pdf", "src/docs/manual.pdf"
+    into "$buildDir/toArchive"
+}
