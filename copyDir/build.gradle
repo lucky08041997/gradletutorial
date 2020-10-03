@@ -1,0 +1,6 @@
+task copyReportDirForArchiving2(type: Copy) {
+    from("$buildDir") {
+        include "reports/**"
+    }
+    into "$buildDir/toArchive"
+}
