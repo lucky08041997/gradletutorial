@@ -1,0 +1,5 @@
+task copyPdfReportForArchiving(type: Copy) {
+    from "$buildDir/reports"
+    include "*.pdf"
+    into "$buildDir/toArchive"
+}
