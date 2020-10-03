@@ -1,0 +1,4 @@
+task copyReport(type: Copy) {
+    from file("reports/my-report.pdf")
+    into file("toAchive")
+}
