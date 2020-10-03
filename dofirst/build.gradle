@@ -5,7 +5,6 @@ task extractDatabase {
 }
 
 extractDatabase {
-    doFirst {
-        println 'Connection to the database...'
-    }
+    doFirst { println 'Connection to the database...' }
+    doFirst { println 'Setting up connection to the database...'}
 }
