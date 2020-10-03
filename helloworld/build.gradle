@@ -1,5 +1,11 @@
-task helloworld {
+task hello {
     doLast {
-        println 'hello, world'
+        println 'hello, '
+    }
+}
+
+task world(dependsOn:hello) {
+    doLast {
+        println "world"
     }
 }
