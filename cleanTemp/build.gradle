@@ -1,0 +1,8 @@
+task cleanTempFiles(type: Delete) {
+    delete fileTree("src").matching {
+        //Menghapus File yang ada di src.
+        //Dengan menggunakan filter matching
+        include "**/*.tmp"
+        //Yang akan dihapus adalah file tmp
+    }
+}
