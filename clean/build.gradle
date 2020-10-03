@@ -1,0 +1,6 @@
+task myClean(type: Delete) {
+    delete buildDir
+    //Menhapus semua konten direktori pada ouput build
+    //Seperti menginisialisasi direktori
+    //Bukan menghapus semua file yang ada directori
+}
